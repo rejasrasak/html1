@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>feedback</title>
+</head>
+<body> 
+	<h1>enter here</h1>
+	<button onclick="myfunction()">click me</button>
+	<p id="demo"></p>
+<script >
+	function myfunction(){
+		var text;
+		var feedback=prompt("please enter your feedback:","please enter your feedback");
+		if(feedback== null || feedback==""){
+			text="user cancelled the prompt.";
+		}else{
+			text="hello how are you";
+		}
+		document.getElementById('demo').innerHTML=text;
+	}
+</script>	
+</body>
+</html>
